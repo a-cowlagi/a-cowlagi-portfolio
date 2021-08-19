@@ -2,7 +2,7 @@ import "./education.scss"
 
 export default function Education() {
     return (
-        <div>
+        <div className = "education">
             
         </div>
     )
