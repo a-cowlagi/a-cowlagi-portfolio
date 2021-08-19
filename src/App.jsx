@@ -10,17 +10,17 @@ import "./app.scss"
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
      <Topbar/>
-     <div className="sections">
-      <Intro/>
-      <About/>
-      <Education/>
-      <Experience/>
-      <Projects/>
-      <Awards/>
-      <Contact/>
-    </div>
+      <div className="sections">
+        <Intro/>
+        <About/>
+        <Education/>
+        <Experience/>
+        <Projects/>
+        <Awards/>
+        <Contact/>
+      </div>
 
     </div>
     

@@ -2,7 +2,7 @@ import "./experience.scss"
 
 export default function Experience() {
     return (
-        <div>     
+        <div className = "experience" id = "experience">          
         </div>
     )
 }
