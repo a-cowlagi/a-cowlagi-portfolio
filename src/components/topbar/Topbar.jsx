@@ -29,7 +29,12 @@ export default function Topbar() {
                 </div>
                 
                 <div className="right">
-                    this is right
+                    <div className="hamburger">
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
+                    
                 </div>           
             </div>               
 
