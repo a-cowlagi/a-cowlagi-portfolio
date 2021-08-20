@@ -7,7 +7,7 @@
     color: $mainColor;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     transition: all 1s ease;
 
     .wrapper{
@@ -43,8 +43,8 @@
                 }
 
                 span{
-                    font-size: 20px;
-                    font-weight: 200;
+                    font-size: 18px;
+                    font-weight: 500;
                 }
 
                 a{
