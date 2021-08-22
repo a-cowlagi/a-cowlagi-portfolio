@@ -9,7 +9,8 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro"> 
-                    <img src= {!menuOpen ? "assets/logo.png" : "assets/logoalt2.png"} alt="logo" className = "logo"/> 
+
+                    <img src= {!menuOpen ? "assets/testlogo.png" : "assets/testlogo_nobg.png"} alt="logo" className = "logo"/> 
                     </a>
 
                     <div className="itemContainer">

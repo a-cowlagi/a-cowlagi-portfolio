@@ -1,8 +1,94 @@
 @import "../../global.scss";
 
 .intro{
-    background-color:white;
+    background: white;
     display: flex;
 
+
+    .left {
+        flex: 0.4;
+        
+    
+        .imgContainer {
+          width: 70%;
+          height: 80%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          float: right;
+    
+          img {
+            padding-top: 100px;
+            height: 70%;
+            
+          }
+        }
+      }
+
+    .right{
+        flex: 0.6;
+        position: relative;
+
+
+        .wrapper{
+            width: 90%;
+            height: 90%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+                ;
+                
+            }
+
+            h2{
+                font-size: 35px;
+                font-family: 'Courier Prime';
+                padding-top: 70px;
+                color: #5a74a8;
+             
+            }
+
+            h3{
+                font-size: 35px;
+                font-weight: 400;
+                span{
+                    font-weight: 400;
+                    font-size: inherit;
+                    color: rgb(172, 28, 57);
+                    text-decoration: underline;
+                }
+
+                .ityped-cursor{
+                    animation: blink 1s infinite
+                }
+            }
+        }
+
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            left: 43%;
+            
+            img{
+                padding-top: 0px;
+                width: 30px;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0;
+                }
+                
+            }
+        }
+    }
     
 }
