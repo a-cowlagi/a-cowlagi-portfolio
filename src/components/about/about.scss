@@ -3,26 +3,50 @@
 .about{
     background-color: white;
     display: flex;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 
-    .left{
-        flex: 0.5;
-    }
     .right{
         flex: 0.5;
+        .wrapper{
+            width: 90%;
+            
+            padding-left: 50px;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
 
+            h1{
+                font-size: 55px;
         
+            }
+        }
+        
+    }
+
+    .left{
+        flex: 0.4;    
         .imgContainer{
             height: 500px;
             width: 500px;
             display: flex;
             align-items: center;
-            margin-right: 10px;
-            justify-content: left;
+            margin: auto;
+            padding-top: 30px;
+            
+        
+            
 
             img{
-                height: 95%;
+                height: 90%;
+                width: 90%;
             }
             
         }
+    }
+    
+    .leftpad{
+        flex: 0.05;
     }
 }

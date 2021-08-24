@@ -6,9 +6,12 @@ import Experience from "./components/experience/Experience";
 import Intro from "./components/intro/Intro";
 import Projects from "./components/projects/Projects";
 import Topbar from "./components/topbar/Topbar";
-import "./app.scss"
+import "./app.scss";
 import { useState } from "react";
+import 'animate.css';
 import Menu from "./components/menu/Menu";
+import ScrollAnimation from "react-animate-on-scroll";
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
