@@ -10,7 +10,6 @@ import "./app.scss";
 import { useState } from "react";
 import 'animate.css';
 import Menu from "./components/menu/Menu";
-import ScrollAnimation from "react-animate-on-scroll";
 
 
 function App() {

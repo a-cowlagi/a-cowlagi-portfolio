@@ -5,7 +5,7 @@
     display: flex;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    
+    height:  calc(100vh - 80px);
 
     .left {
         flex: 0.4;  
@@ -83,7 +83,7 @@
 
         a {
             position: absolute;
-            bottom: 70px;
+            bottom: 20px;
             left: 43%;
             
             img{
