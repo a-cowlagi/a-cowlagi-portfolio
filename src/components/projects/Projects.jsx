@@ -75,7 +75,6 @@ export default function Projects() {
     }, [selected]);
 
     return (
-
             <Fade bottom>
             <div className = "projects" id = "projects">  
                 <div className="wrapper">
@@ -90,25 +89,26 @@ export default function Projects() {
                     ))}
                 </ul>     
 
-                
                     <div className="container">
-
                         {data.map(d=> (
                             <div className="item">
-                            <img src={d.img} alt="" />
-                            <h3>{d.title}</h3>
+                                <img src={d.img} alt="" />
+
+                                <div className="text">                
+                                    <h3>{d.title}</h3>
+                                    <h4>{d.text}</h4>
+                                </div>
+                                
                             </div>
                         )
-                        )}
-                
+                        )}                
                     </div>
                 </div>
                 <div className="spacer"></div>
-                <div className="arrow"> 
-                    <a href="#contact">
-                        <img src="assets/down.png" alt="" />
-                    
-                    </a> 
+                    <div className="arrow"> 
+                        <a href="#contact">
+                            <img src="assets/down.png" alt="" />                        
+                        </a> 
                 </div>
                   
                             

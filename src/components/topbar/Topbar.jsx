@@ -2,16 +2,17 @@ import "./topbar.scss"
 
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
+import { Link } from "react-router-dom";
 
 export default function Topbar({menuOpen, setMenuOpen}) {
     return (
         <div className = {"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro"> 
 
-                    <img src= {!menuOpen ? "assets/testlogo.png" : "assets/testlogo_nobg.png"} alt="logo" className = "logo"/> 
-                    </a>
+                   <Link to = "/#intro"> 
+                   <img src= {!menuOpen ? "assets/testlogo.png" : "assets/testlogo_nobg.png"} alt="logo" className = "logo"/> 
+                   </Link>
 
                     <div className="itemContainer">
                         <a href="tel:+7347474331"> 

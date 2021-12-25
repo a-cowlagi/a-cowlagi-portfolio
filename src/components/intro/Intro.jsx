@@ -12,12 +12,11 @@ export default function Intro() {
             backDelay: 1500,
             backSpeed: 60,
             typeSpeed: 100,
-            strings: ['student.','programmer.', 'electrical engineer.', 'sports fanatic.', 'gamer.', 
+            strings: ['student.','programmer.', 'researcher.', 'electrical engineer.',
             'researcher.'] })
     }, [])
     return (
         <div className = "intro" id = "intro">   
-
             <div className="left">
                     <div className="imgContainer">
                     <img src="assets/testlogo_shadow.png" alt="" />

@@ -73,10 +73,21 @@
                 position: relative;
                 transition: all 0.5s ease;
 
-                h3{
+                .text{
                     position: absolute;
-                    font-size: 25px;
+                    top: 30%;
+                    object-fit: cover;
+                    visibility: hidden;
+
+                    h3{
+                        font-size: 25px;
+                    }
+
+                    h4{
+                        font-size:  15px;
+                    }
                 }
+                
 
                 img{
                     width: 100%;
@@ -92,6 +103,11 @@
                         opacity: 0.2; 
                         z-index: 0;
                     }
+
+                    .text{
+                        visibility: visible;
+                    }
+
                 
                 }
                 
