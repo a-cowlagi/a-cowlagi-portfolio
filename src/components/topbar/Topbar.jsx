@@ -2,7 +2,6 @@ import "./topbar.scss"
 
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
-import { Link } from "react-router-dom";
 
 export default function Topbar({menuOpen, setMenuOpen}) {
     return (
@@ -10,9 +9,9 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             <div className="wrapper">
                 <div className="left">
 
-                   <Link to = "/#intro"> 
+                   <a href= "/#intro"> 
                    <img src= {!menuOpen ? "assets/testlogo.png" : "assets/testlogo_nobg.png"} alt="logo" className = "logo"/> 
-                   </Link>
+                   </a>
 
                     <div className="itemContainer">
                         <a href="tel:+7347474331"> 
@@ -42,8 +41,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
-                    </div>
-                    
+                    </div>        
                 </div>           
             </div>               
 
