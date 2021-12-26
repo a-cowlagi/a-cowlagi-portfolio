@@ -58,12 +58,12 @@ export default function Experience() {
                     <div className="item">
                         <div className="left">
                             <div className="leftContainer">
-                                <div className="topLeftContainer">
+                                <span className="topLeftContainer">
                                     <div className="imgContainer">
                                         <img src={d.icon} alt="" />
                                     </div>
                                     <h4>{d.year}</h4>
-                                </div>
+                                </span>
                                 
                                 <div className="text">
                                     <h2>{d.title}</h2>
