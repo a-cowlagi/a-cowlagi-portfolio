@@ -1,3 +1,152 @@
-.experience{
-    background-color: seagreen;
+@import "../../global.scss";
+
+.experience {
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 90vh;
+
+    .arrow {
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+
+        &.left {
+            left: 100px;
+            transform: rotateY(180deg);
+        }
+
+        &.right {
+            right: 100px;
+        }
+    }
+
+    .slider {
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+
+        .container {
+            width: 100vw;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .left {
+                    flex: 7;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .leftContainer {
+                        width: 90%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .topLeftContainer {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: left;
+                            align-items: center;
+
+                            .imgContainer {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                margin-right: 20px;
+                                background-color: rgb(102, 180, 216);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                img {
+                                    width: 25px;
+                                }
+                            }
+                            h4{
+                                font-size: 20px;
+                                text-align: center;
+                            }
+
+                            
+                        }
+
+                        .text{
+                            h2 {
+                                font-size: 35px;
+                                margin-bottom: 10px;
+                            }
+
+                            h3{
+                                font-size: 25px; 
+                                margin: 5px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                                margin: 5px;
+                            }
+                        }
+
+                        .labels{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: left;
+                            align-items: left;
+                            ul{
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                              
+                                
+                                list-style-type: none;
+
+                                li{
+                                    width: 70px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    padding: 5px;
+                                    margin: 5px;
+                                    border-radius: 5px;
+                                    background-color: rgb(184, 179, 179);
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                .right {
+                    border-radius: 0%;
+                    flex: 5;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+
+                    img {
+                        width: 400px;
+                        transform: rotate(-10deg);
+                    }
+                }
+            }
+        }
+    }
 }
