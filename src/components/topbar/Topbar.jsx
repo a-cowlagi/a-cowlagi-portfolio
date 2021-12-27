@@ -10,7 +10,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                 <div className="left">
 
                    <a href= "/#intro"> 
-                   <img src= {!menuOpen ? "assets/testlogo.png" : "assets/testlogo_nobg.png"} alt="logo" className = "logo"/> 
+                   <img src= {!menuOpen ? "assets/testlogo.PNG" : "assets/testlogo_nobg.PNG"} alt="logo" className = "logo"/> 
                    </a>
 
                     <div className="itemContainer">
