@@ -1,14 +1,63 @@
-.contact{
-    height: 100vh;
+.contact {
     background-color: white;
-    text-align: center;
+    min-height: 90vh;
 
-    
-    h1{
-        height: 70px;
+    h1 {
+        height: 80px;
         font-size: 50px;
         overflow: hidden;
-        margin-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        text-align: center;
     }
-    
+
+    .wrapper {
+        width: 100%;
+        min-height: 75vh;
+        display: flex;
+
+        .left {
+            flex: 5;
+            min-height: 75vh;
+            background-color: white;
+        }
+
+        .right {
+            flex: 7;
+            min-height: 75vh;
+            background-color: white;
+            Form {
+                width: 90%;
+                height: 100%;
+                .ui.input {
+                    width: 90%;
+                    height: 30px;
+                    font-size: 14px;
+                }
+
+                textarea {
+                    width: 90%;
+                    min-height: 250px;
+                    font-size: 14px;
+                }
+
+                .ui.button {
+                    width: 90%;
+                    height: 30px;
+                    color: white;
+                    background-color: crimson;
+                    border: none;
+                    border-radius: 10px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+
+                }
+            }
+        }
+    }
 }
