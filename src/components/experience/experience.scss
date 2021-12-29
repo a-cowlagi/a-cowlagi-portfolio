@@ -8,43 +8,94 @@
     position: relative;
     min-height: 90vh;
 
+    h1{
+        z-index: 4;
+        color: white;
+        font-size: 55px;
+        position: absolute;
+        top: 2%;
+        
+        @include mobile{
+            display: none;
+        }
+    }
+    
+
     .arrow {
-        height: 50px;
+        height: 10%;
+        min-height: 30px;
         position: absolute;
         cursor: pointer;
 
         &.left {
-            left: 100px;
+            left: 2.5%;
             transform: rotateY(180deg);
         }
 
         &.right {
-            right: 100px;
+            right: 2.5%;
+        }
+
+        @include mobile {
+            &.left {
+                left: 25%;
+                bottom: 5%;
+                transform: rotateY(180deg);
+            }
+
+            &.right {
+                right: 25%;
+                bottom: 5%;
+            }
         }
     }
 
     .slider {
-        height: 350px;
+        height: 70vh;
         display: flex;
         position: absolute;
         left: 0;
+        top: 15%;
         transition: all 1s ease-out;
+
+        @include mobile {
+            top: 5%;
+            z-index: 3;
+            height: 70vh;
+        }
 
         .container {
             width: 100vw;
-            height: 350px;
+            height: 70vh;
             display: flex;
             align-items: center;
             justify-content: center;
 
+            @include mobile {
+                height: 70vh;
+                min-width: 0px;
+                
+            }
+
             .item {
-                width: 700px;
+                width: 70%;
+                min-width: 500px;
+                max-width: 750px;
                 height: 100%;
                 background-color: white;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile {
+                    width: 90%;
+                    height: 100%;
+                    min-width: 0px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    
+                }
 
                 .left {
                     flex: 7;
@@ -53,49 +104,64 @@
                     align-items: center;
                     justify-content: center;
 
+                    @include mobile {
+                        flex: 0.6;       
+                    }
+
                     .leftContainer {
                         width: 90%;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        align-items: flex-start;
+
+
+                        
 
                         .topLeftContainer {
                             display: flex;
                             flex-direction: row;
                             justify-content: left;
-                            align-items: center;
+                            align-items: flex-start;
+                            
 
                             .imgContainer {
                                 width: 40px;
                                 height: 40px;
                                 border-radius: 50%;
-                                margin-right: 20px;
+                                margin-right: 20px; 
                                 background-color: rgb(102, 180, 216);
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
 
+                                @include mobile{
+                                    margin-top: 20px;
+                                    width: 30px;
+                                    height: 30px;
+                                }
+
                                 img {
                                     width: 25px;
                                 }
                             }
-                            h4{
-                                font-size: 20px;
+                            h4 {
+                                margin-top: 20px;
+                                font-size: 1.5rem;
                                 text-align: center;
+                                
                             }
-
-                            
                         }
 
-                        .text{
+                        .text {
                             h2 {
                                 font-size: 35px;
                                 margin-bottom: 10px;
                             }
 
-                            h3{
-                                font-size: 25px; 
+                            h3 {
+                                font-size: 25px;
                                 margin: 5px;
                             }
 
@@ -105,20 +171,24 @@
                             }
                         }
 
-                        .labels{
+                        .labels {
                             display: flex;
                             flex-direction: row;
                             justify-content: left;
                             align-items: left;
-                            ul{
+                            
+                            @include mobile{
+                                margin-bottom: 20px;
+                            }
+
+                            ul {
                                 height: 100%;
                                 width: 100%;
                                 display: flex;
-                              
-                                
+
                                 list-style-type: none;
 
-                                li{
+                                li {
                                     width: 70px;
                                     text-align: center;
                                     text-decoration: none;
@@ -126,13 +196,15 @@
                                     margin: 5px;
                                     border-radius: 5px;
                                     background-color: rgb(184, 179, 179);
+
+                                    
                                 }
                             }
-                            
                         }
                     }
                 }
                 .right {
+                    
                     border-radius: 0%;
                     flex: 5;
                     height: 100%;
@@ -141,9 +213,18 @@
                     justify-content: center;
                     overflow: hidden;
 
+                    @include mobile {
+                        flex: 0.4;
+                    }
+
                     img {
                         width: 400px;
                         transform: rotate(-10deg);
+
+                        @include mobile {
+                            width: 100%;  
+                            transform: none; 
+                        }
                     }
                 }
             }

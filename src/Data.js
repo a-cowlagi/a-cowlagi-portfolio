@@ -15,7 +15,7 @@ export const allProjects = [
     },
     {
       id: 3,
-      title: "E-commerce Web Design",
+      title: "Commerce Web Design",
       text: "Description",
       img:
         "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",

@@ -48,10 +48,16 @@
                 }
             }
 
+            @include mobile{
+                margin: 10px 0;
+                flex-wrap: wrap;
+                justify-content: center;
+              }
+
         }
 
         .container{
-            width: 80%;
+            width: 90%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -81,6 +87,7 @@
 
                     h3{
                         font-size: 25px;
+                        
                     }
 
                     h4{
@@ -110,6 +117,19 @@
 
                 
                 }
+
+                @include mobile{
+                    background-color: rgb(161, 160, 160);
+                    cursor: pointer;
+                    img{
+                        opacity: 0.2; 
+                        z-index: 0;
+                    }
+
+                    .text{
+                        visibility: visible;
+                    }
+                  }
                 
             
             }

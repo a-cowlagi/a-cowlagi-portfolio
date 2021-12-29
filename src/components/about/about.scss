@@ -3,44 +3,61 @@
 .about{
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    justify-content: center;
 
     .right{
         flex: 0.5;
+        min-width: 350px;
+
+        
         .wrapper{
-            width: 90%;
-            
+            width: 90%;        
             padding-left: 50px;
             padding-top: 50px;
+
+            
+
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             justify-content: left;
+
+            @include mobile{
+                padding: 0px;
+                width: 100%;
+            }
 
             h1{
                 font-size: 55px;
-        
+                text-align: center;
             }
         }
         
     }
 
     .left{
-        flex: 0.4;    
+        flex: 0.4;   
+        min-width: 350px;
+        @include mobile{
+            flex: 1;
+            min-width: 250px;    
+        }
+        
         .imgContainer{
-            height: 500px;
-            width: 500px;
+            height: 100%;
+            width: 100%;
             display: flex;
             align-items: center;
             margin: auto;
             padding-top: 30px;
-            
-        
-            
+                
 
             img{
-                height: 90%;
-                width: 90%;
+                height: 100%;
+                width: 100%;
             }
             
         }
@@ -48,5 +65,11 @@
     
     .leftpad{
         flex: 0.05;
+        @include mobile{
+            flex: 0;
+            display: none;
+          }
     }
+
+    
 }

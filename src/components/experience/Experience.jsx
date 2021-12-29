@@ -23,7 +23,7 @@ export default function Experience() {
       title: "Mobile Application",
       location: "Google",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
       skills: ["Skill 3", "Skill 4", "Skill 5"]
@@ -51,7 +51,7 @@ export default function Experience() {
 
     return (
         <div className = "experience" id = "experience">  
-                 
+            <h1>Experience</h1>
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                  
                 {data.map(d =>(<div className="container">
