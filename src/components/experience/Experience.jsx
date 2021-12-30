@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./experience.scss"
 
 export default function Experience() {
-  
+
   const data = [
     {
       id: "1",
@@ -14,7 +14,7 @@ export default function Experience() {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
-      skills: ["Skill 1", "Skill 2", "Skill 3"],  
+      skills: ["Skill 1", "Skill 2", "Skill 3"],
     },
     {
       id: "2",
@@ -40,7 +40,7 @@ export default function Experience() {
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState((data.length-1)/2);
+  const [currentSlide, setCurrentSlide] = useState((data.length - 1) / 2);
   const handleClick = (way) => {
     way === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
@@ -49,57 +49,59 @@ export default function Experience() {
 
 
 
-    return (
-        <div className = "experience" id = "experience">  
-            <h1>Experience</h1>
-            <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
-                 
-                {data.map(d =>(<div className="container">
-                    <div className="item">
-                        <div className="left">
-                            <div className="leftContainer">
-                                <span className="topLeftContainer">
-                                    <div className="imgContainer">
-                                        <img src={d.icon} alt="" />
-                                    </div>
-                                    <h4>{d.year}</h4>
-                                </span>
-                                
-                                <div className="text">
-                                    <h2>{d.title}</h2>
-                                    <h3>{d.location} </h3> 
-                                    <p>{d.desc}</p>    
-                                </div>
+  return (
+    <div className="experience" id="experience">
+      <h1>Experience</h1>
+      <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
 
-                                <div className="labels">
-                                    <ul>
-                                        
-                                        {d.skills.map((skill, subindex) => (
-                                            <li key = {subindex}> {skill}</li>)
-                                        )}
+        {data.map(d => (<div className="container">
+          <div className="item">
+            <div className="left">
+              <div className="leftContainer">
+                <span className="topLeftContainer">
+                  <div className="imgContainer">
+                    <img src={d.icon} alt="" />
+                  </div>
+                  <h4>{d.year}</h4>
+                </span>
 
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="right">
-                        <img
-                            src={d.img}
-                            alt=""
-                            />
-                        </div>
-                    </div>
-                </div>)   )}
-                
+                <div className="text">
+                  <h2>{d.title}</h2>
+                  <h3>{d.location} </h3>
+                  <p>{d.desc}</p>
+                </div>
+
+                <div className="labels">
+                  <ul>
+
+                    {d.skills.map((skill, subindex) => (
+                      <li key={subindex}> {skill}</li>)
+                    )}
+
+                  </ul>
+                </div>
+              </div>
             </div>
-            <img src = {(currentSlide > 0) ? "assets/arrow.png" : ""} className = "arrow left" alt="" onClick={() => 
-                {if (currentSlide > 0) {
-                    handleClick("left")
-                }}}/>
-            <img src = {(currentSlide < data.length - 1) ? "assets/arrow.png" : ""} className = "arrow right" alt="" onClick={() => 
-                {if (currentSlide < data.length - 1) {
-                    handleClick("right")
-                }}}/>
-        </div>
-    )
+            <div className="right">
+              <img
+                src={d.img}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>))}
+
+      </div>
+      <img src={(currentSlide > 0) ? "assets/arrow.png" : ""} className="arrow left" alt="" onClick={() => {
+        if (currentSlide > 0) {
+          handleClick("left")
+        }
+      }} />
+      <img src={(currentSlide < data.length - 1) ? "assets/arrow.png" : ""} className="arrow right" alt="" onClick={() => {
+        if (currentSlide < data.length - 1) {
+          handleClick("right")
+        }
+      }} />
+    </div>
+  )
 }

@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.about{
+.about {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -8,68 +8,93 @@
     scroll-snap-type: y mandatory;
     justify-content: center;
 
-    .right{
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
         flex: 0.5;
         min-width: 350px;
 
-        
-        .wrapper{
-            width: 90%;        
-            padding-left: 50px;
-            padding-top: 50px;
+        .wrapper {
+            width: 90%;
+            padding-left: 5%;
+            padding-top: 30px;
 
-            
+
 
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: left;
 
-            @include mobile{
-                padding: 0px;
-                width: 100%;
+            @include mobile {
+                padding: 20px;
+                width:100%;
             }
-
-            h1{
-                font-size: 55px;
+            
+            h1 {
+                font-size: 3rem;
                 text-align: center;
             }
+
+            .description{
+                p {
+                    font-size: 16px;
+                }
+    
+             
+            }
+
+            ul{
+                margin-top: -25px;
+                li{
+                    font-size: 18px;
+                    margin: 10px 0;
+                    span{
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .buttons{
+                margin-top: 10px;
+                justify-content: center;
+                a{
+                    margin-right: 10px;
+                }
+            }
         }
-        
     }
 
-    .left{
-        flex: 0.4;   
+    .left {
+        flex: 0.4;
         min-width: 350px;
-        @include mobile{
+        @include mobile {
             flex: 1;
-            min-width: 250px;    
+            min-width: 250px;
+            max-width: 400px;
         }
-        
-        .imgContainer{
-            height: 100%;
+
+        .imgContainer {
             width: 100%;
             display: flex;
             align-items: center;
             margin: auto;
             padding-top: 30px;
-                
 
-            img{
+            img {
                 height: 100%;
                 width: 100%;
             }
-            
         }
     }
-    
-    .leftpad{
-        flex: 0.05;
-        @include mobile{
-            flex: 0;
-            display: none;
-          }
-    }
 
-    
+    .leftpad {
+        flex: 0.05;
+        @include mobile {
+            display: none;
+        }
+    }
 }
