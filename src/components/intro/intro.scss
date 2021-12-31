@@ -8,7 +8,7 @@
 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    height:  calc(100vh - 80px);
+    min-height:  calc(100vh - 80px);
 
     @include mobile{
         flex-direction: column;
@@ -19,31 +19,30 @@
         flex: 0.4;  
         animation: 1s ease-in-out rollIn;
         animation-fill-mode: backwards;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @include mobile{
             flex: 0;
             height: 0px;
             width: 0px;
-            visibility: hidden;
+            display: none;
           }
         
         .imgContainer {
           width: 80%;
-          height: 70%;
+          //height: 70%;
           display: flex;
-          align-items: flex-end;
+          align-items: center;
           justify-content: center;
           float: right;
           padding-top: 40px;
     
           img {
-            height: 75%;
-            width: 90%;
             min-height: 200px;
             min-width: 200px;
-            max-width: 300px;
-            
-            
+            max-width: 300px;  
           }
 
           
@@ -112,7 +111,7 @@
 
         a {
             position: absolute;
-            bottom: 40px;
+            bottom: 10%;
             left: 43%;
 
             @include mobile{

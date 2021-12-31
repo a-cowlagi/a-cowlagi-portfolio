@@ -4,7 +4,6 @@ import { useState } from "react";
 import 'animate.css';
 import Menu from "./components/menu/Menu";
 import Landing from "./components/landingPage/Landing";
-import Resume from "./components/resume/Resume";
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
@@ -21,7 +20,6 @@ function App() {
      <Topbar menuOpen = {menuOpen} setMenuOpen = {setMenuOpen}/>
      <Menu menuOpen = {menuOpen} setMenuOpen = {setMenuOpen}/> 
       <Routes>      
-        <Route exact path="/resume" element={<Resume />} />
         <Route exact path="/#intro" element={<Intro />} />
         <Route exact path="/#about" element={<About />} />
         <Route exact path="/#experience" element={<Experience />} />
