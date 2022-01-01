@@ -9,8 +9,8 @@ $height: 400px;
     }
 }
 
-@mixin horizontalconfig {
-    @media (max-width: #{$height}){
+@mixin vertical {
+    @media screen and (orientation:portrait) and (min-width: #{$width}) {
         @content
     }
 }
