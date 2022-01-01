@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./experience.scss"
+import Parser from 'html-react-parser';
 
 export default function Experience() {
 
@@ -8,10 +9,10 @@ export default function Experience() {
       id: "1",
       icon: "./assets/mobile.png",
       year: "April 2020 - May 2021",
-      title: "Web Design",
-      location: "Amazon",
+      title: "Undergraduate Researcher",
+      location: "University of Pennsylvania",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "• Working on understanding deep network representations using techniques from statistical physics and information theory <br><br> • Characterizing the geometry of model manifolds to understand network overparameterization <br><br>  • Determining if data geometry induces capacity control in standard neural architectures",
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
       skills: ["Skill 1", "Skill 2", "Skill 3"],
@@ -66,9 +67,9 @@ export default function Experience() {
                 </span>
 
                 <div className="text">
-                  <h2>{d.title}</h2>
-                  <h3>{d.location} </h3>
-                  <p>{d.desc}</p>
+                  <h2>{d.location} </h2>
+                  <h3>{d.title}</h3>
+                  <p>{Parser(d.desc)}</p>
                 </div>
 
                 <div className="labels">
