@@ -15,6 +15,8 @@ export default function Experience() {
         "• Working on understanding deep network representations using techniques from statistical physics and information theory <br><br> • Characterizing the geometry of model manifolds to understand network overparameterization <br><br>  • Determining if data geometry induces capacity control in standard neural architectures to establish non-vacuous generalization bounds for sloppy models",
       img:
         "assets/inpca projection.png",
+      img2:
+        "assets/inpca projection2.png",
       skills: ["PyTorch", "Numpy", "Sklearn", "Seaborn", "TensorFlow"],
     },
     {
@@ -26,7 +28,9 @@ export default function Experience() {
       desc:
         "• Generalized line-detection algorithms, signal/image processing techniques to efficiently detect minor planets in tabular astrometric survey data using Python/MySQL. <br> <br> • Identified, catologged, and submitted detections of 500+ new objects and recovered 200+ previously discovered objects <br> <br> • University of Michigan Trans-Neptunian Object group member and collaborator on the DECam Ecliptic Exploration Project, supported by the NSF and NASA",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "assets/lightcurve.png",
+      img2:
+        "assets/periodogram.png",
       skills: ["Pandas", "OpenCV", "MySQL", "SciPy", "AstroPy"]
     },
     {
@@ -39,14 +43,30 @@ export default function Experience() {
         "•  Course: Data Structures & Algorithms; Course Size: 220+ <br> <br> • Roles/Responsibilities: Hold 1-hour weekly recitation section; Grade student assignments; Answer questions and provide debugging assistance through office hours; Develop course content (problem sets, recitation guides)",
       img:
         "assets/prims.png",
-      skills: ["Java", "LaTeX", "Git"]
+      img2:
+        "assets/hash.png",
+      skills: ["Java", "Eclipse", "JUnit", "LaTeX", "Git"]
+    },
+    {
+      id: "4",
+      icon: "./assets/globe.png",
+      year: "June 2019 - May 2020",
+      title: "Research Assistant",
+      location: "University of Pennsylvania",
+      desc:
+        "•  Developed Python tools to characterize the lattice connectivity of semiconductor networks using Python (NetworkX, OpenCV) <br> <br>• Applied image-processing techniques and elementary graph theory methods to automate connectively analysis of 1000+ SEM and TEM images",
+      img:
+        "assets/rawnetwork.png",
+      img2:
+        "assets/graphnetwork.png",
+      skills: ["Java", "Eclipse", "JUnit", "LaTeX", "Git"]
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState((data.length - 1) / 2);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length-1)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
 
@@ -87,6 +107,11 @@ export default function Experience() {
             <div className="right">
               <img
                 src={d.img}
+                alt=""
+              />
+
+              <img
+                src={d.img2}
                 alt=""
               />
             </div>
