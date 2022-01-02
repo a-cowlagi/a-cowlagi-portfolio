@@ -8,36 +8,38 @@ export default function Experience() {
     {
       id: "1",
       icon: "./assets/mobile.png",
-      year: "April 2020 - May 2021",
+      year: "April 2021 - Present",
       title: "Undergraduate Researcher",
       location: "University of Pennsylvania",
       desc:
-        "• Working on understanding deep network representations using techniques from statistical physics and information theory <br><br> • Characterizing the geometry of model manifolds to understand network overparameterization <br><br>  • Determining if data geometry induces capacity control in standard neural architectures",
+        "• Working on understanding deep network representations using techniques from statistical physics and information theory <br><br> • Characterizing the geometry of model manifolds to understand network overparameterization <br><br>  • Determining if data geometry induces capacity control in standard neural architectures to establish non-vacuous generalization bounds for sloppy models",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
-      skills: ["Skill 1", "Skill 2", "Skill 3"],
+        "assets/inpca projection.png",
+      skills: ["PyTorch", "Numpy", "Sklearn", "Seaborn", "TensorFlow"],
     },
     {
       id: "2",
       icon: "./assets/globe.png",
-      year: "April 2020 - May 2021",
-      title: "Mobile Application",
-      location: "Google",
+      year: "April 2019 - November 2020",
+      title: "Data Analyst",
+      location: "University of Michigan",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "• Generalized line-detection algorithms, signal/image processing techniques to efficiently detect minor planets in tabular astrometric survey data using Python/MySQL. <br> <br> • Identified, catologged, and submitted detections of 500+ new objects and recovered 200+ previously discovered objects <br> <br> • University of Michigan Trans-Neptunian Object group member and collaborator on the DECam Ecliptic Exploration Project, supported by the NSF and NASA",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-      skills: ["Skill 3", "Skill 4", "Skill 5"]
+      skills: ["Pandas", "OpenCV", "MySQL", "SciPy", "AstroPy"]
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
+      icon: "./assets/globe.png",
+      year: "January 2022 - Present",
+      title: "Teaching Assistant",
+      location: "University of Pennsylvania",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "•  Course: Data Structures & Algorithms; Course Size: 220+ <br> <br> • Roles/Responsibilities: Hold 1-hour weekly recitation section; Grade student assignments; Answer questions and provide debugging assistance through office hours; Develop course content (problem sets, recitation guides)",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-      skills: ["Skill 1", "Skill 2", "Skill 3"]
+        "assets/prims.png",
+      skills: ["Java", "LaTeX", "Git"]
     },
   ];
 
@@ -74,7 +76,6 @@ export default function Experience() {
 
                 <div className="labels">
                   <ul>
-
                     {d.skills.map((skill, subindex) => (
                       <li key={subindex}> {skill}</li>)
                     )}
@@ -93,12 +94,14 @@ export default function Experience() {
         </div>))}
 
       </div>
-      <img src={(currentSlide > 0) ? "assets/arrow.png" : ""} className="arrow left" alt="" onClick={() => {
+      
+      <img src="assets/arrow.png"
+          className={"arrow left " + (currentSlide <=0 && "inactive")} alt="leftarrow" onClick={() => {
         if (currentSlide > 0) {
           handleClick("left")
         }
       }} />
-      <img src={(currentSlide < data.length - 1) ? "assets/arrow.png" : ""} className="arrow right" alt="" onClick={() => {
+      <img src="assets/arrow.png" className={"arrow right " + (currentSlide >= data.length-1 && "inactive")} alt="rightarrow" onClick={() => {
         if (currentSlide < data.length - 1) {
           handleClick("right")
         }
