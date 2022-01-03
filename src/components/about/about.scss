@@ -8,7 +8,7 @@
     scroll-snap-type: y mandatory;
     justify-content: center;
 
-    @include mobile{
+    @include mobile {
         flex-direction: column;
         align-items: center;
     }
@@ -22,8 +22,6 @@
             padding-left: 5%;
             padding-top: 30px;
 
-
-
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -31,37 +29,35 @@
 
             @include mobile {
                 padding: 20px;
-                width:100%;
+                width: 100%;
             }
-            
+
             h1 {
                 font-size: 3rem;
                 text-align: center;
             }
 
-            .description{
+            .description {
                 p {
                     font-size: 16px;
                 }
-    
-             
             }
 
-            ul{
+            ul {
                 margin-top: -25px;
-                li{
+                li {
                     font-size: 18px;
                     margin: 10px 0;
-                    span{
+                    span {
                         font-weight: 600;
                     }
                 }
             }
 
-            .buttons{
+            .buttons {
                 margin-top: 10px;
                 justify-content: center;
-                a{
+                a {
                     margin-right: 10px;
                 }
             }

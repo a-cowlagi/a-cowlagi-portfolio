@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.menu{
+.menu {
     width: 230px;
     height: 100%;
     background-color: $mainColor;
@@ -15,19 +15,16 @@
     justify-content: center;
     transition: all 1s ease;
 
-    @include mobile{
+    @include mobile {
         width: 100%;
         right: -100%;
-      }
-
-
-    &.active{
-        right: 0;
-
-    
     }
 
-    ul{
+    &.active {
+        right: 0;
+    }
+
+    ul {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -36,21 +33,21 @@
         color: white;
         width: 60%;
 
-        @include mobile{
+        @include mobile {
             font-size: 50px;
             font-weight: 300;
-          }
+        }
 
-        li{
+        li {
             margin-bottom: 30px;
-            a{
+            a {
                 font-size: 25px;
                 color: inherit;
                 text-decoration: auto;
             }
         }
 
-        li:hover{
+        li:hover {
             font-weight: 400;
         }
     }

@@ -4,7 +4,7 @@ import { Button, Icon } from 'semantic-ui-react'
 const ButtonAnimated = () => (
     <div>
         <Button.Group>
-            
+
             <a href={process.env.PUBLIC_URL + '/Resume.pdf'} target="_blank" rel="noopener noreferrer">
                 <Button animated='fade'>
                     <Button.Content visible>Download Resume</Button.Content>

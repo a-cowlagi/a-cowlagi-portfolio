@@ -21,11 +21,11 @@ export default function About() {
                     <div className="wrapper">
                         <h1>About Me</h1>
                         <div className="description">
-                            <p>I am a student at the University of Pennsylvania in the <a href = "https://www.viper.upenn.edu/">Vagelos Integrated Progam in Energy Research</a>. I love working on projects that tackle tough questions — the answers are most satisfying!</p>
+                            <p>I am a student at the University of Pennsylvania in the <a href="https://www.viper.upenn.edu/">Vagelos Integrated Progam in Energy Research</a>. I love working on projects that tackle tough questions — the answers are most satisfying!</p>
                             <br />
                             <p>I have a wide range of interests (and experiences) including deep learning, autonomous robotics, control theory, data visualization, statistical physics, embedded systems, energy accessibility, and statistical physics.</p>
                             <br />
-                            <p>In my free time, I'm usually going down <a href = "https://www.youtube.com/watch?v=-yrZpTHBEss"> YouTube rabbitholes</a>, <a href = "https://www.youtube.com/watch?v=693Syfpp1Wo"> watching sports</a>, or reading <a href = "https://www.cantorsparadise.com/hilberts-hotel-an-ingenious-explanation-of-infinity-1d1a79932080">  popular science/tech news</a>!</p>
+                            <p>In my free time, I'm usually going down <a href="https://www.youtube.com/watch?v=-yrZpTHBEss"> YouTube rabbitholes</a>, <a href="https://www.youtube.com/watch?v=693Syfpp1Wo"> watching sports</a>, or reading <a href="https://www.cantorsparadise.com/hilberts-hotel-an-ingenious-explanation-of-infinity-1d1a79932080">  popular science/tech news</a>!</p>
                             <br />
 
                         </div>

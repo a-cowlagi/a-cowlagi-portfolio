@@ -2,15 +2,14 @@
 
 .portfolioList {
     font-size: 14px;
-    display:inline;
+    display: inline;
     padding: 10px 20px;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 15px;
     cursor: pointer;
-    
 
-    &.active{
+    &.active {
         background-color: $mainColor;
         color: white;
     }

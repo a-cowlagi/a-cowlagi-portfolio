@@ -66,7 +66,7 @@ export default function Experience() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length-1)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length - 1)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
 
@@ -119,14 +119,14 @@ export default function Experience() {
         </div>))}
 
       </div>
-      
+
       <img src="assets/arrow.png"
-          className={"arrow left " + (currentSlide <=0 && "inactive")} alt="leftarrow" onClick={() => {
-        if (currentSlide > 0) {
-          handleClick("left")
-        }
-      }} />
-      <img src="assets/arrow.png" className={"arrow right " + (currentSlide >= data.length-1 && "inactive")} alt="rightarrow" onClick={() => {
+        className={"arrow left " + (currentSlide <= 0 && "inactive")} alt="leftarrow" onClick={() => {
+          if (currentSlide > 0) {
+            handleClick("left")
+          }
+        }} />
+      <img src="assets/arrow.png" className={"arrow right " + (currentSlide >= data.length - 1 && "inactive")} alt="rightarrow" onClick={() => {
         if (currentSlide < data.length - 1) {
           handleClick("right")
         }

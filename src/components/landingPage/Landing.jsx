@@ -13,14 +13,14 @@ export default function Landing() {
   return (
     <div className="landing">
       <div className="sections">
-        <Intro/>
-        <About/>
-        <Education/>
-        <Experience/>
-        <Projects/>
-        <Contact/>
+        <Intro />
+        <About />
+        <Education />
+        <Experience />
+        <Projects />
+        <Contact />
       </div>
     </div>
-    
+
   );
 }

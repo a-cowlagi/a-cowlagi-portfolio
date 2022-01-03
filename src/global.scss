@@ -4,13 +4,13 @@ $width: 700px;
 $height: 400px;
 
 @mixin mobile {
-    @media (max-width: #{$width}){
-        @content
+    @media (max-width: #{$width}) {
+        @content;
     }
 }
 
 @mixin vertical {
     @media screen and (orientation:portrait) and (min-width: #{$width}) {
-        @content
+        @content;
     }
 }

@@ -4,38 +4,39 @@ import { useEffect, useRef } from "react"
 
 export default function Intro() {
 
-    const textRef  = useRef();
+    const textRef = useRef();
 
     useEffect(() => {
-        init(textRef.current, { 
-            showCursor: true, 
+        init(textRef.current, {
+            showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
             typeSpeed: 100,
-            strings: ['student.','programmer.', 'researcher.', 'electrical engineer.',
-            'researcher.'] })
+            strings: ['student.', 'programmer.', 'researcher.', 'electrical engineer.',
+                'researcher.']
+        })
     }, [])
     return (
-        <div className = "intro" id = "intro">   
+        <div className="intro" id="intro">
             <div className="left">
-                    <div className="imgContainer">
+                <div className="imgContainer">
                     <img src="assets/testlogo_shadow.PNG" alt="" />
-                    </div>
+                </div>
             </div>
 
             <div className="right">
                 <div className="wrapper">
                     <h2>Hi! I'm</h2>
                     <h1>Anirudh Cowlagi</h1>
-                    <h3>and I'm a <span ref = {textRef}></span> </h3>
+                    <h3>and I'm a <span ref={textRef}></span> </h3>
                 </div>
 
                 <a href="#about">
                     <img src="assets/down.png" alt="" />
-                
-                 </a>
-            </div> 
-              
+
+                </a>
+            </div>
+
 
 
 

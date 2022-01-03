@@ -1,36 +1,35 @@
 @import "../../global.scss";
 
-.projects{
+.projects {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    .wrapper{
+    .wrapper {
         height: auto;
         min-height: 80vh;
-        background-color:white;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        h1{
+
+        h1 {
             height: 70px;
             font-size: 50px;
             overflow: hidden;
             margin-top: 20px;
         }
 
-        ul{
+        ul {
             margin: 14px;
             padding: 0;
             list-style: none;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
 
-            li{
+            li {
                 font-size: 14px;
-                display:inline;
+                display: inline;
                 padding: 10px 20px;
                 margin-right: 20px;
                 margin-left: 20px;
@@ -38,25 +37,24 @@
                 cursor: pointer;
                 overflow: hidden;
 
-                &:hover{
+                &:hover {
                     background-color: rgb(231, 230, 230);
                 }
 
-                &.active{
+                &.active {
                     background-color: $mainColor;
                     color: white;
                 }
             }
 
-            @include mobile{
+            @include mobile {
                 margin: 10px 0;
                 flex-wrap: wrap;
                 justify-content: center;
-              }
-
+            }
         }
 
-        .container{
+        .container {
             width: 90%;
             display: flex;
             align-items: center;
@@ -65,7 +63,7 @@
             margin-top: 20px;
             overflow-y: auto;
 
-            .item{
+            .item {
                 width: 280px;
                 height: 200px;
                 border-radius: 10px;
@@ -79,87 +77,75 @@
                 position: relative;
                 transition: all 0.5s ease;
 
-                .text{
+                .text {
                     position: absolute;
                     top: 30%;
                     object-fit: cover;
                     visibility: hidden;
 
-                    h3{
+                    h3 {
                         font-size: 25px;
-                        
                     }
 
-                    h4{
-                        font-size:  15px;
+                    h4 {
+                        font-size: 15px;
                     }
                 }
-                
 
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     z-index: 1;
                 }
 
-                &:hover{
+                &:hover {
                     background-color: $mainColor;
                     cursor: pointer;
-                    img{
-                        opacity: 0.2; 
+                    img {
+                        opacity: 0.2;
                         z-index: 0;
                     }
 
-                    .text{
+                    .text {
                         visibility: visible;
                     }
-
-                
                 }
 
-                @include mobile{
+                @include mobile {
                     background-color: rgb(161, 160, 160);
                     cursor: pointer;
-                    img{
-                        opacity: 0.2; 
+                    img {
+                        opacity: 0.2;
                         z-index: 0;
                     }
 
-                    .text{
+                    .text {
                         visibility: visible;
                     }
-                  }
-                
-            
+                }
             }
         }
-
     }
 
-    
-
-    .arrow{
+    .arrow {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        a{
-            img{
+
+        a {
+            img {
                 padding-top: 0px;
                 width: 30px;
                 animation: arrowBlink 2s infinite;
             }
-    
+
             @keyframes arrowBlink {
-                100%{
+                100% {
                     opacity: 0;
                 }
-                
             }
         }
-        
     }
-    
 }
