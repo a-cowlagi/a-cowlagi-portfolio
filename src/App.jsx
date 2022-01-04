@@ -11,6 +11,7 @@ import Experience from "./components/experience/Experience";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (

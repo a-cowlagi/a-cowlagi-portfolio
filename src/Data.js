@@ -1,38 +1,45 @@
 export const allProjects = [
   {
     id: 1,
-    title: "Social Media App",
-    text: "Social Media App",
+    title: "Does Data Geometry Control Neural Geometry?",
+    text: "Studying deep network over-parameterization using the Fisher Information Matrix (FIM). <br><br> Discovered surprising trends in the structure of the FIM eigenspectrum and the topology of model predictions. <br><br> <div class = 'inner' style = 'z-index: 20'> <a href= 'https://aaai.org/Conferences/AAAI-22/student-abstract-and-poster-program/' target = '_blank'> </div> Published </a> in AAAI-2022 as a Student Abstract and further selected as 1 of 20 finalist papers.",
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      process.env.PUBLIC_URL + "assets/eigenspectra.png",
+    link: process.env.PUBLIC_URL + "/Data-Geometry-Neural-Geometry.pdf", 
+    pdf: true 
   },
   {
     id: 2,
-    title: "Rampa UI Design",
-    text: "Description",
+    title: "Penn Electric Racing",
+    text: "Hardware and Software sub-teams: <br><br>  Hardware: Designing, testing, and debugging a PCB to actively balance vehicle accumulator substacks (9 70V stacks) using custom balancing algorithm <br><br> Software: Working on cone perception, waypoint-based path planning/optimization for driverless capability.",
     img:
-      "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+    process.env.PUBLIC_URL + "assets/rev4.png",
+    link: "https://www.pennelectricracing.com/",
+    pdf: false
   },
+ 
   {
     id: 3,
-    title: "Commerce Web Design",
-    text: "Description",
-    img:
-      "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+    title: "AstroTrack",
+    text: "An efficient Python-based pipeline to aid with the detection, recovery, and characterization of minor planets in the solar system (asteroids, trans-Neptunian objects, Kuiper Belt Objects) using the DES and DEEP surveys.  <br><br>Single night analysis results: Recovered ~480 known asteroids across exposures, detection of ~1,000 new objects.  <a href = 'https://abstracts.societyforscience.org/Home/FullAbstract?ISEFYears=0%2C&Category=Any%20Category&AllAbstracts=True&FairCountry=Any%20Country&FairState=Any%20State&ProjectId=19496' target = '_blank'> ISEF Finalist </a>",
+    img: process.env.PUBLIC_URL + "assets/astrotrack.png",
+    link: process.env.PUBLIC_URL + "/AstroTrack.pdf", 
+    pdf: true
   },
   {
     id: 4,
-    title: "Relax Mobile App",
-    text: "Description",
-    img:
-      "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 5,
     title: "Hero Web Design",
     text: "Description",
     img:
       "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+  },
+  {
+    id: 5,
+    title: "AI@Penn, WUDAC",
+    text: "Organized <a href = 'https://aipenn.org/aihacks' target = '_blank'> datathon </a> at the University of Pennsylvania sponsored by fintech/e-commerce companies attracting 100+ teams <br><br> Designed and taught workshop on sentiment analysis to 30+ Penn undergraduate students <br><br>Worked with a Philadelphia-based startup (Highlight) to develop a robust system for product review evaluation with 90+% OOS accuracy",
+    img:
+    process.env.PUBLIC_URL + "assets/aipennwudac.png",
+    link: "https://gitfront.io/r/user-7866516/e40d90e09f12584ba430ee018c714ebc691b7486/AI-Penn-and-WUDAC/"
   },
   {
     id: 6,

@@ -55,7 +55,7 @@
         }
 
         .container {
-            width: 90%;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -64,8 +64,10 @@
             overflow-y: auto;
 
             .item {
-                width: 280px;
-                height: 200px;
+                width: 380px;
+                height: 300px;
+                z-index: inherit;
+                
                 border-radius: 10px;
                 border: 1px solid lightgray;
                 margin: 10px 20px;
@@ -79,16 +81,30 @@
 
                 .text {
                     position: absolute;
-                    top: 30%;
+                    width: 90%;
+                    top: 8%;
                     object-fit: cover;
                     visibility: hidden;
 
                     h3 {
                         font-size: 25px;
+
+                        @include mobile {
+                            font-size: 22px;
+                        }
                     }
 
-                    h4 {
+                    p {
                         font-size: 15px;
+
+                        @include mobile {
+                            font-size: 13px;
+                        }
+                        .inner {
+                            a{
+                                font-size: 25px;
+                            }
+                        }
                     }
                 }
 
@@ -100,7 +116,8 @@
                 }
 
                 &:hover {
-                    background-color: $mainColor;
+                    //background-color: $mainColor;
+                    background-color: rgb(43, 42, 42);
                     cursor: pointer;
                     img {
                         opacity: 0.2;
@@ -113,7 +130,7 @@
                 }
 
                 @include mobile {
-                    background-color: rgb(161, 160, 160);
+                    
                     cursor: pointer;
                     img {
                         opacity: 0.2;

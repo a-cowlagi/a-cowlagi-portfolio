@@ -4,6 +4,26 @@ import "animate.css"
 import PortfolioList from '../portfolioList/PortfolioList';
 import { useEffect, useState } from 'react';
 import { allProjects } from '../../Data';
+import Parser from 'html-react-parser';
+
+const openPDF = (title, URI) => () => {
+    const pdfWindow = window.open("_blank");
+    const html = `
+      <html>
+        <head>
+          <title>${title}</title>
+        </head>
+        <body style="margin:0">
+          <embed width="100%" height="100%" src=${URI} type="application/pdf">
+        </body>
+      </html>
+    `;
+
+    pdfWindow.document.write(html);
+    pdfWindow.document.close();
+    pdfWindow.history.pushState(null, null, URI);
+};
+
 
 export default function Projects() {
     const [selected, setSelected] = useState("all")
@@ -16,19 +36,23 @@ export default function Projects() {
         },
         {
             id: "filter 1",
-            title: "Filter 1",
+            title: "Research",
         },
         {
             id: "filter 2",
-            title: "Filter 2",
+            title: "ML and Data Science",
         },
         {
             id: "filter 3",
-            title: "Filter 3",
+            title: "Software Tools",
         },
         {
             id: "filter 4",
-            title: "Filter 4",
+            title: "Hardware",
+        },
+        {
+            id: "filter 5",
+            title: "Teaching",
         },
 
     ];
@@ -62,6 +86,11 @@ export default function Projects() {
                     indexArr = [4, 5];
                     break;
                 }
+            case "filter 5":
+                {
+                    indexArr = [4, 5];
+                    break;
+                }
             default:
                 setData(allProjects);
         }
@@ -90,17 +119,30 @@ export default function Projects() {
                     </ul>
 
                     <div className="container">
-                        {data.map(d => (
-                            <div className="item">
-                                <img src={d.img} alt="" />
+                        {data.map(d => {
+                            if (d.pdf) {
+                                return (<div className="item" onClick={openPDF(d.title, d.link)}>
+                                    <img src={d.img} alt="" />
 
-                                <div className="text">
-                                    <h3>{d.title}</h3>
-                                    <h4>{d.text}</h4>
-                                </div>
+                                    <div className="text">
+                                        <h3>{d.title}</h3>
+                                        <p>{Parser(d.text)}</p>
+                                    </div>
 
-                            </div>
-                        )
+                                </div>)
+
+                            } else {
+                                return (<a className="item" href={d.link}>
+                                    <img src={d.img} alt="" />
+
+                                    <div className="text">
+                                        <h3>{d.title}</h3>
+                                        <p>{Parser(d.text)}</p>
+                                    </div>
+
+                                </a>)
+                            }
+                        }
                         )}
                     </div>
                 </div>
