@@ -61,8 +61,8 @@ export const allProjects = [
   },
   {
     id: 8,
-    title: "Billiard Balls & Decimal Expansions",
-    text: "Projects completed at the University of Michigan, in an inquiry-based course exploring some open problems in mathematics. <br><br>• ''Billiard reflections'' explores the trajectory of a billiard ball undergoing collisions with walls. <br><br>• ''Decimal expansions'' investigates the periods of decimal expansions of rational numbers.",
+    title: "Billiard Balls and Decimal Expansions",
+    text: "Projects completed at the University of Michigan, in an inquiry-based course exploring some open problems in mathematics. <br><br>• Billiard balls is an exploration of the trajectory of a billiard ball undergoing collisions with walls. <br><br>• Decimal expansions investigates the periods of decimal expansions of rational numbers.",
     img:
       process.env.PUBLIC_URL + "assets/mathresearch.png",
     link: "https://drive.google.com/drive/folders/1xT9Ds7hNejW5dVYZksuPWH8sdXXNB-kJ?usp=sharing"
