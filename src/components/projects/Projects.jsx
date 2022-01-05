@@ -104,7 +104,7 @@ export default function Projects() {
     }, [selected]);
 
     return (
-        <Fade top = {true} appear = {true} fraction = {0.05}>
+        <Fade appear = {true} fraction = {0.05}>
             <div className="projects" id="projects">
                 <div className="wrapper">
                     <h1>Projects</h1>

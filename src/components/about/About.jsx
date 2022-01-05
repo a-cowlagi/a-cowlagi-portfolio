@@ -5,7 +5,7 @@ import ButtonAnimated from './ButtonAnimated';
 
 export default function About() {
     return (
-        <Fade bottom>
+        <Fade appear = {true} fraction = {0.1}>
             <div className="about" id="about">
                 <div className="leftpad"></div>
                 <div className="left">
