@@ -60,7 +60,6 @@ export default function Projects() {
     useEffect(() => {
         var indexArr = [];
         var outProjects = [];
-
         switch (selected) {
 
             case "all":
@@ -93,6 +92,7 @@ export default function Projects() {
                 }
             default:
                 setData(allProjects);
+                break;
         }
 
         if (selected !== "all") {

@@ -58,6 +58,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/ipsp.png",
     link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
   },
+  {text: ""},
 
 
   /*{
