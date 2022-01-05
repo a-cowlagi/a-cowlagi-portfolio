@@ -17,8 +17,17 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
-      
-    <BrowserRouter>
+     <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+     <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <div className="sections">
+        <Intro />
+        <About />
+        <Education />
+        <Experience />
+        <Projects />
+        <Contact />
+      </div>
+    {/*<BrowserRouter>
         <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Routes>
@@ -30,7 +39,7 @@ function App() {
           <Route exact path="/#contact" element={<Contact />} />
           <Route exact path="/" element={<Landing />} />
         </Routes>
-      </BrowserRouter>
+    </BrowserRouter>*/}
 
     </div>
 
