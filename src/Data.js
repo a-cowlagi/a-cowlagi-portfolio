@@ -59,7 +59,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/ipsp.png",
     link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
   },
-  /*{
+  {
     id: 8,
     title: "Billiard Balls & Decimal Expansions",
     text: "Projects completed at the University of Michigan, in an inquiry-based course exploring some open problems in mathematics. <br><br>• ''Billiard reflections'' explores the trajectory of a billiard ball undergoing collisions with walls. <br><br>• ''Decimal expansions'' investigates the periods of decimal expansions of rational numbers.",
@@ -68,7 +68,7 @@ export const allProjects = [
     link: "https://drive.google.com/drive/folders/1xT9Ds7hNejW5dVYZksuPWH8sdXXNB-kJ?usp=sharing"
   },
 
-  {
+  /*{
     id: 9,
     title: "Modeling Electric Trucking",
     text: "Constructed in-depth models to evaluate and predict the growth and impact of the electric trucking industry. <br><br> Implemented a greedy algorithm to determine optimal charging station placement along major US highways. <br><br> <a href = 'https://m3challenge.siam.org/sites/default/files/M3%20Winners%202020_complete%20list%20pre%20final%20event.pdf' target = '_blank'> Technical computing finalist </a> and <a href = 'https://m3challenge.siam.org/sites/default/files/M3%20Winners%202019_complete%20list%20pre%20final%20event.pdf' target = '_blank'> overall semifinalist </a> in the 2019/2020 Mathworks Math Modeling (M3) Challenge(s).",
