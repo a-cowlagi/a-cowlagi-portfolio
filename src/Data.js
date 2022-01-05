@@ -26,7 +26,7 @@ export const allProjects = [
     link: process.env.PUBLIC_URL + "/AstroTrack.pdf",
     pdf: true
   },
-  /*{
+  {
     id: 4,
     title: "StructuralGT",
     text: "Aided with the development of a <a href = 'https://pypi.org/project/StructuralGT/' target = '_blank'>Python package </a> to automate the analysis of structural networks (macro/microscale) by converting greyscale representations (e.g. SEM/TEM images) to graphs using the NetworkX library. <br><br> Recognized in Acknowledgements of <a href = 'https://pubs.acs.org/doi/10.1021/acsnano.1c04711' target = '_blank'>Structural Analysis of Nanoscale Network Materials Using Graph Theory (ACS Nano 2021, 15, 8) </a>. ",
@@ -76,7 +76,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/trucking.png",
     link: process.env.PUBLIC_URL + "Modeling-Electric-Trucking.pdf",
     pdf: true
-  },*/
+  }
 
 
 ];
