@@ -18,7 +18,7 @@ export const allProjects = [
     pdf: false
   },
 
-  /*{
+  {
     id: 3,
     title: "AstroTrack",
     text: "An efficient Python-based pipeline to aid with the detection, recovery, and characterization of minor planets in the solar system (asteroids, trans-Neptunian objects, Kuiper Belt Objects) using the DES and DEEP surveys.  <br><br>Single night analysis results: Recovered ~480 known asteroids across exposures, detection of ~1,000 new objects.  <a href = 'https://abstracts.societyforscience.org/Home/FullAbstract?ISEFYears=0%2C&Category=Any%20Category&AllAbstracts=True&FairCountry=Any%20Country&FairState=Any%20State&ProjectId=19496' target = '_blank'> ISEF Finalist </a>",
@@ -26,7 +26,7 @@ export const allProjects = [
     link: process.env.PUBLIC_URL + "/AstroTrack.pdf",
     pdf: true
   },
-  {
+  /*{
     id: 4,
     title: "StructuralGT",
     text: "Aided with the development of a <a href = 'https://pypi.org/project/StructuralGT/' target = '_blank'>Python package </a> to automate the analysis of structural networks (macro/microscale) by converting greyscale representations (e.g. SEM/TEM images) to graphs using the NetworkX library. <br><br> Recognized in Acknowledgements of <a href = 'https://pubs.acs.org/doi/10.1021/acsnano.1c04711' target = '_blank'>Structural Analysis of Nanoscale Network Materials Using Graph Theory (ACS Nano 2021, 15, 8) </a>. ",
