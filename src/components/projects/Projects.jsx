@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade';
+//import Fade from 'react-reveal/Fade';
 import "./projects.scss"
 import "animate.css"
 import PortfolioList from '../portfolioList/PortfolioList';
@@ -104,7 +104,7 @@ export default function Projects() {
     }, [selected]);
 
     return (
-        <Fade bottom>
+        //<Fade bottom>
             <div className="projects" id="projects">
                 <div className="wrapper">
                     <h1>Projects</h1>
@@ -155,16 +155,16 @@ export default function Projects() {
                         )}
                     </div>
                 </div>
-                {/*<div className="spacer"></div>
+                <div className="spacer"></div>
                 <div className="arrow">
                     <a href="/#contact">
                         <img src="assets/down.png" alt="" />
                     </a>
-                        </div>*/}
+                        </div>
 
 
             </div>
-        </Fade>
+        //</Fade>
 
 
     )
