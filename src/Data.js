@@ -58,14 +58,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/ipsp.png",
     link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
   },
-  {
-    id: 8,
-    title: "Problem Solving in Physics",
-    text: "Created and taught in introductory course in physics and problem solving to 20+ local middle and high school students <br><br> Developed 18 interactive lecture sessions and 10 hands-on problem sets with extensive feedback",
-    img:
-      process.env.PUBLIC_URL + "assets/ipsp.png",
-    link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
-  },
+
 
   /*{
     id: 8,
