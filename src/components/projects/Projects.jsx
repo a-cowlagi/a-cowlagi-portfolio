@@ -121,7 +121,7 @@ export default function Projects() {
                     <div className="container">
                         {data.map(d => {
                             if (d.pdf) {
-                                return (<div className="item" href = {d.link} onClick={openPDF(d.title, d.link)}>
+                                return (<div className="item" href={d.link} onClick={openPDF(d.title, d.link)}>
                                     <img src={d.img} alt="" />
 
                                     <div className="text">

@@ -2,7 +2,6 @@ import "./education.scss"
 
 export default function Education() {
     const data = [
-
         {
             id: 1,
             year: "2020-2024",
@@ -14,7 +13,6 @@ export default function Education() {
             desc:
                 "Minor(s): Computer Science, Data Science",
             link: "https://www.ese.upenn.edu/",
-
         },
 
         {
@@ -49,18 +47,15 @@ export default function Education() {
 
     return (
         <div className="education" id="education">
-
             <h1>Education</h1>
             <div className="container">
                 {data.map((d) => (
-
                     <div className={d.featured ? "card featured" : "card"}>
                         <a href={d.link}>
                             <img src={d.img} alt="img" />
                         </a>
 
                         <div className="text">
-
                             <div className="year">
                                 {d.year}
                             </div>

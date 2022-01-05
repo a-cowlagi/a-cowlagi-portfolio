@@ -67,7 +67,7 @@
                 width: 380px;
                 height: 320px;
                 z-index: inherit;
-                
+
                 border-radius: 10px;
                 border: 1px solid lightgray;
                 margin: 10px 20px;
@@ -101,7 +101,7 @@
                             font-size: 13px;
                         }
                         .inner {
-                            a{
+                            a {
                                 font-size: 25px;
                             }
                         }
@@ -139,7 +139,19 @@
 
                     .text {
                         visibility: visible;
-        
+                    }
+                }
+
+                @include vertical {
+                    background-color: rgb(43, 42, 42);
+                    cursor: pointer;
+                    img {
+                        opacity: 0.2;
+                        z-index: 0;
+                    }
+
+                    .text {
+                        visibility: visible;
                     }
                 }
             }

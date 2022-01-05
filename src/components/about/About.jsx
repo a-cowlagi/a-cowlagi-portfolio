@@ -4,7 +4,6 @@ import ButtonAnimated from './ButtonAnimated';
 
 
 export default function About() {
-
     return (
         <Fade bottom>
             <div className="about" id="about">
@@ -41,10 +40,6 @@ export default function About() {
                         <div className="buttons">
                             <ButtonAnimated></ButtonAnimated>
                         </div>
-
-
-
-
                     </div>
                 </div>
 
