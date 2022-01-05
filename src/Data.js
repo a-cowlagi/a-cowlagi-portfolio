@@ -1,5 +1,5 @@
 export const allProjects = [
-  /*{
+  {
     id: 1,
     title: "Does Data Geometry Control Neural Geometry?",
     text: "Studying deep network over-parameterization using the Fisher Information Matrix (FIM). <br><br> Discovered surprising trends in the structure of the FIM eigenspectrum and the topology of model predictions. <br><br> <div class = 'inner' style = 'z-index: 20'> <a href= 'https://aaai.org/Conferences/AAAI-22/student-abstract-and-poster-program/' target = '_blank'> </div> Published </a> in AAAI-2022 as a Student Abstract and further selected as 1 of 20 finalist papers.",
@@ -7,7 +7,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/eigenspectra.png",
     link: process.env.PUBLIC_URL + "/Data-Geometry-Neural-Geometry.pdf",
     pdf: true
-  },
+  }/*,
   {
     id: 2,
     title: "Penn Electric Racing",
