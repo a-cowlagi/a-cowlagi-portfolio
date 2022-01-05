@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { allProjects } from '../../Data';
 import Parser from 'html-react-parser';
 
-const openPDF = (title, URI) => () => {
+/*const openPDF = (title, URI) => () => {
     const pdfWindow = window.open("_blank");
     const html = `
       <html>
@@ -22,7 +22,7 @@ const openPDF = (title, URI) => () => {
     pdfWindow.document.write(html);
     pdfWindow.document.close();
     pdfWindow.history.pushState(null, null, URI);
-};
+};*/
 
 
 export default function Projects() {
@@ -119,8 +119,18 @@ export default function Projects() {
                     </ul>
 
                     <div className="container">
-                        {data.map(d => {
-                            if (d.pdf) {
+                        {data.map(d => 
+                            (<a className="item" href={d.link} target ="_blank" rel = "noopener noreferrer">
+                            <img src={d.img} alt="" />
+
+                            <div className="text">
+                                <h3>{d.title}</h3>
+                                <p>{Parser(d.text)}</p>
+                            </div>
+
+                        </a>)
+
+                            /*if (d.pdf) {
                                 return (<div className="item" href={d.link} onClick={openPDF(d.title, d.link)}>
                                     <img src={d.img} alt="" />
 
@@ -141,8 +151,7 @@ export default function Projects() {
                                     </div>
 
                                 </a>)
-                            }
-                        }
+                            }*/                       
                         )}
                     </div>
                 </div>
