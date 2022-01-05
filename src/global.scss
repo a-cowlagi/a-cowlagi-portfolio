@@ -10,7 +10,7 @@ $height: 400px;
 }
 
 @mixin vertical {
-    @media screen and (orientation:portrait) and (min-width: #{$width}), (hover: none) {
+    @media screen and (orientation:portrait) and (min-width: #{$width}) {
         @content;
     }
 }
