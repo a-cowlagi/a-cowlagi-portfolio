@@ -51,7 +51,7 @@ export const allProjects = [
     link: process.env.PUBLIC_URL + "/SolarMonitoring.pdf",
     pdf: true
   },
-  {
+  /*{
     id: 7,
     title: "Problem Solving in Physics",
     text: "Created and taught in introductory course in physics and problem solving to 20+ local middle and high school students <br><br> Developed 18 interactive lecture sessions and 10 hands-on problem sets with extensive feedback",
@@ -76,7 +76,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/trucking.png",
     link: process.env.PUBLIC_URL + "Modeling-Electric-Trucking.pdf",
     pdf: true
-  }
+  }*/
 
 
 ];
