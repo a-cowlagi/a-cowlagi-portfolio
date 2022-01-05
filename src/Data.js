@@ -58,10 +58,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/ipsp.png",
     link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
   },
-  {text: ""},
-
-
-  /*{
+  {
     id: 8,
     title: "Billiard Balls and Decimal Expansions",
     text: "Projects completed at the University of Michigan, in an inquiry-based course exploring some open problems in mathematics. <br><br>• Billiard balls is an exploration of the trajectory of a billiard ball undergoing collisions with walls. <br><br>• Decimal expansions investigates the periods of decimal expansions of rational numbers.",
@@ -77,7 +74,7 @@ export const allProjects = [
     img:
       process.env.PUBLIC_URL + "assets/trucking.png",
     link: process.env.PUBLIC_URL + "Modeling-Electric-Trucking.pdf",    
-  }*/
+  }
 
 
 ];

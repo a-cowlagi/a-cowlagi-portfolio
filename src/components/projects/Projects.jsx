@@ -155,12 +155,12 @@ export default function Projects() {
                         )}
                     </div>
                 </div>
-                <div className="spacer"></div>
+                {/*<div className="spacer"></div>
                 <div className="arrow">
                     <a href="/#contact">
                         <img src="assets/down.png" alt="" />
                     </a>
-                </div>
+                        </div>*/}
 
 
             </div>
