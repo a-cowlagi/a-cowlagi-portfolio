@@ -59,7 +59,7 @@ export default function Experience() {
         "assets/rawnetwork.png",
       img2:
         "assets/graphnetwork.png",
-      skills: ["Java", "Eclipse", "JUnit", "LaTeX", "Git"]
+      skills: ["Python", "OpenCV", "Pandas", "NetworkX"]
     },
   ];
 

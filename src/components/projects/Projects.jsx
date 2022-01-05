@@ -40,7 +40,7 @@ export default function Projects() {
         },
         {
             id: "filter 2",
-            title: "ML and Data Science",
+            title: "ML/Data Science",
         },
         {
             id: "filter 3",
@@ -68,12 +68,12 @@ export default function Projects() {
                 break;
             case "filter 1":
                 {
-                    indexArr = [0, 2];
+                    indexArr = [0, 2, 3, 5, 7];
                     break;
                 }
             case "filter 2":
                 {
-                    indexArr = [0, 1, 2];
+                    indexArr = [0, 2, 4, 8, 3];
                     break;
                 }
             case "filter 3":
@@ -83,12 +83,12 @@ export default function Projects() {
                 }
             case "filter 4":
                 {
-                    indexArr = [4, 5];
+                    indexArr = [1, 5];
                     break;
                 }
             case "filter 5":
                 {
-                    indexArr = [4, 5];
+                    indexArr = [4, 6];
                     break;
                 }
             default:
@@ -121,7 +121,7 @@ export default function Projects() {
                     <div className="container">
                         {data.map(d => {
                             if (d.pdf) {
-                                return (<div className="item" onClick={openPDF(d.title, d.link)}>
+                                return (<div className="item" href = {d.link} onClick={openPDF(d.title, d.link)}>
                                     <img src={d.img} alt="" />
 
                                     <div className="text">

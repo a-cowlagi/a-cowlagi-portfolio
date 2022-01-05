@@ -65,7 +65,7 @@
 
             .item {
                 width: 380px;
-                height: 300px;
+                height: 320px;
                 z-index: inherit;
                 
                 border-radius: 10px;
@@ -130,7 +130,7 @@
                 }
 
                 @include mobile {
-                    
+                    background-color: rgb(43, 42, 42);
                     cursor: pointer;
                     img {
                         opacity: 0.2;
@@ -139,6 +139,7 @@
 
                     .text {
                         visibility: visible;
+        
                     }
                 }
             }
@@ -153,7 +154,7 @@
 
         a {
             img {
-                padding-top: 0px;
+                padding-top: 20px;
                 width: 30px;
                 animation: arrowBlink 2s infinite;
             }
