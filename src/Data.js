@@ -7,7 +7,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/eigenspectra.png",
     link: process.env.PUBLIC_URL + "/Data-Geometry-Neural-Geometry.pdf",
     pdf: true
-  }/*,
+  },
   {
     id: 2,
     title: "Penn Electric Racing",
@@ -18,7 +18,7 @@ export const allProjects = [
     pdf: false
   },
 
-  {
+  /*{
     id: 3,
     title: "AstroTrack",
     text: "An efficient Python-based pipeline to aid with the detection, recovery, and characterization of minor planets in the solar system (asteroids, trans-Neptunian objects, Kuiper Belt Objects) using the DES and DEEP surveys.  <br><br>Single night analysis results: Recovered ~480 known asteroids across exposures, detection of ~1,000 new objects.  <a href = 'https://abstracts.societyforscience.org/Home/FullAbstract?ISEFYears=0%2C&Category=Any%20Category&AllAbstracts=True&FairCountry=Any%20Country&FairState=Any%20State&ProjectId=19496' target = '_blank'> ISEF Finalist </a>",
