@@ -6,7 +6,7 @@ export const allProjects = [
     img:
       process.env.PUBLIC_URL + "assets/eigenspectra.png",
     link: process.env.PUBLIC_URL + "/Data-Geometry-Neural-Geometry.pdf",
-    pdf: true
+    
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const allProjects = [
     img:
       process.env.PUBLIC_URL + "assets/rev4.png",
     link: "https://www.pennelectricracing.com/",
-    pdf: false
+    
   },
 
   {
@@ -24,7 +24,6 @@ export const allProjects = [
     text: "An efficient Python-based pipeline to aid with the detection, recovery, and characterization of minor planets in the solar system (asteroids, trans-Neptunian objects, Kuiper Belt Objects) using the DES and DEEP surveys.  <br><br>Single night analysis results: Recovered ~480 known asteroids across exposures, detection of ~1,000 new objects.  <a href = 'https://abstracts.societyforscience.org/Home/FullAbstract?ISEFYears=0%2C&Category=Any%20Category&AllAbstracts=True&FairCountry=Any%20Country&FairState=Any%20State&ProjectId=19496' target = '_blank'> ISEF Finalist </a>",
     img: process.env.PUBLIC_URL + "assets/astrotrack.png",
     link: process.env.PUBLIC_URL + "/AstroTrack.pdf",
-    pdf: true
   },
   {
     id: 4,
@@ -49,7 +48,7 @@ export const allProjects = [
     img:
       process.env.PUBLIC_URL + "assets/iot.png",
     link: process.env.PUBLIC_URL + "/SolarMonitoring.pdf",
-    pdf: true
+  
   },
   {
     id: 7,
@@ -59,24 +58,24 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/ipsp.png",
     link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
   },
-  {
+  /*{
     id: 8,
     title: "Billiard Balls and Decimal Expansions",
     text: "Projects completed at the University of Michigan, in an inquiry-based course exploring some open problems in mathematics. <br><br>• Billiard balls is an exploration of the trajectory of a billiard ball undergoing collisions with walls. <br><br>• Decimal expansions investigates the periods of decimal expansions of rational numbers.",
     img:
       process.env.PUBLIC_URL + "assets/mathresearch.png",
     link: "https://drive.google.com/drive/folders/1xT9Ds7hNejW5dVYZksuPWH8sdXXNB-kJ?usp=sharing"
-  },
+  },*/
 
-  /*{
+  {
     id: 9,
     title: "Modeling Electric Trucking",
     text: "Constructed in-depth models to evaluate and predict the growth and impact of the electric trucking industry. <br><br> Implemented a greedy algorithm to determine optimal charging station placement along major US highways. <br><br> <a href = 'https://m3challenge.siam.org/sites/default/files/M3%20Winners%202020_complete%20list%20pre%20final%20event.pdf' target = '_blank'> Technical computing finalist </a> and <a href = 'https://m3challenge.siam.org/sites/default/files/M3%20Winners%202019_complete%20list%20pre%20final%20event.pdf' target = '_blank'> overall semifinalist </a> in the 2019/2020 Mathworks Math Modeling (M3) Challenge(s).",
     img:
       process.env.PUBLIC_URL + "assets/trucking.png",
     link: process.env.PUBLIC_URL + "Modeling-Electric-Trucking.pdf",
-    pdf: true
-  }*/
+    
+  }
 
 
 ];
