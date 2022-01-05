@@ -58,6 +58,15 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/ipsp.png",
     link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
   },
+  {
+    id: 8,
+    title: "Problem Solving in Physics",
+    text: "Created and taught in introductory course in physics and problem solving to 20+ local middle and high school students <br><br> Developed 18 interactive lecture sessions and 10 hands-on problem sets with extensive feedback",
+    img:
+      process.env.PUBLIC_URL + "assets/ipsp.png",
+    link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
+  },
+
   /*{
     id: 8,
     title: "Billiard Balls and Decimal Expansions",
@@ -65,7 +74,7 @@ export const allProjects = [
     img:
       process.env.PUBLIC_URL + "assets/mathresearch.png",
     link: "https://drive.google.com/drive/folders/1xT9Ds7hNejW5dVYZksuPWH8sdXXNB-kJ?usp=sharing"
-  },*/
+  },
 
   {
     id: 9,
@@ -73,9 +82,8 @@ export const allProjects = [
     text: "Constructed in-depth models to evaluate and predict the growth and impact of the electric trucking industry. <br><br> Implemented a greedy algorithm to determine optimal charging station placement along major US highways. <br><br> <a href = 'https://m3challenge.siam.org/sites/default/files/M3%20Winners%202020_complete%20list%20pre%20final%20event.pdf' target = '_blank'> Technical computing finalist </a> and <a href = 'https://m3challenge.siam.org/sites/default/files/M3%20Winners%202019_complete%20list%20pre%20final%20event.pdf' target = '_blank'> overall semifinalist </a> in the 2019/2020 Mathworks Math Modeling (M3) Challenge(s).",
     img:
       process.env.PUBLIC_URL + "assets/trucking.png",
-    link: process.env.PUBLIC_URL + "Modeling-Electric-Trucking.pdf",
-    
-  }
+    link: process.env.PUBLIC_URL + "Modeling-Electric-Trucking.pdf",    
+  }*/
 
 
 ];
