@@ -7,7 +7,6 @@ export default function About() {
     return (
         <Fade bottom>
             <div className="about" id="about">
-
                 <div className="leftpad"></div>
                 <div className="left">
                     <div className="imgContainer">
@@ -24,7 +23,7 @@ export default function About() {
                             <br />
                             <p>I have a wide range of interests (and experiences) including deep learning, autonomous robotics, control theory, data visualization, statistical physics, embedded systems, energy accessibility, and statistical physics.</p>
                             <br />
-                            <p>In my free time, I'm usually going down <a href="https://www.youtube.com/watch?v=-yrZpTHBEss"> YouTube rabbitholes</a>, <a href="https://www.youtube.com/watch?v=693Syfpp1Wo"> watching sports</a>, or reading <a href="https://www.cantorsparadise.com/hilberts-hotel-an-ingenious-explanation-of-infinity-1d1a79932080">  popular science/tech news</a>!</p>
+                            <p>In my free time, I'm usually going down <a href="https://www.youtube.com/watch?v=-yrZpTHBEss">YouTube rabbitholes</a>, <a href="https://www.youtube.com/watch?v=693Syfpp1Wo">watching sports</a>, or reading <a href="https://www.cantorsparadise.com/hilberts-hotel-an-ingenious-explanation-of-infinity-1d1a79932080">  popular science/tech news</a>!</p>
                             <br />
 
                         </div>
