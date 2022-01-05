@@ -51,7 +51,7 @@ export const allProjects = [
     link: process.env.PUBLIC_URL + "/SolarMonitoring.pdf",
     pdf: true
   },
-  /*{
+  {
     id: 7,
     title: "Problem Solving in Physics",
     text: "Created and taught in introductory course in physics and problem solving to 20+ local middle and high school students <br><br> Developed 18 interactive lecture sessions and 10 hands-on problem sets with extensive feedback",
@@ -59,7 +59,7 @@ export const allProjects = [
       process.env.PUBLIC_URL + "assets/ipsp.png",
     link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
   },
-  {
+  /*{
     id: 8,
     title: "Billiard Balls & Decimal Expansions",
     text: "Projects completed at the University of Michigan, in an inquiry-based course exploring some open problems in mathematics. <br><br>• ''Billiard reflections'' explores the trajectory of a billiard ball undergoing collisions with walls. <br><br>• ''Decimal expansions'' investigates the periods of decimal expansions of rational numbers.",
