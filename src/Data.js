@@ -23,7 +23,7 @@ export const allProjects = [
     title: "AstroTrack",
     text: "An efficient Python-based pipeline to aid with the detection, recovery, and characterization of minor planets in the solar system (asteroids, trans-Neptunian objects, Kuiper Belt Objects) using the DES and DEEP surveys.  <br><br>Single night analysis results: Recovered ~480 known asteroids across exposures, detection of ~1,000 new objects.  <a href = 'https://abstracts.societyforscience.org/Home/FullAbstract?ISEFYears=0%2C&Category=Any%20Category&AllAbstracts=True&FairCountry=Any%20Country&FairState=Any%20State&ProjectId=19496' target = '_blank'> ISEF Finalist </a>",
     img: process.env.PUBLIC_URL + "assets/astrotrack.png",
-    link: process.env.PUBLIC_URL + "/AstroTrack.pdf",
+    link: "https://gitfront.io/r/user-7866516/bc4cff16377033ad8855f71e915117cfcf7855d3/AstroTrack/",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const allProjects = [
     text: "Constructed a novel IOT-based monitoring and feedback system for use with off-grid photovoltaic systems. <br><br> A long-range, Arduino-based device able to dynamically adjust power production to accomodate for real-time conditions and adapt to user energy consumption patterns. <br><br> Category winner (Energy) at Michigan Science and Engineering Fair",
     img:
       process.env.PUBLIC_URL + "assets/iot.png",
-    link: process.env.PUBLIC_URL + "/SolarMonitoring.pdf",
+    link: "https://drive.google.com/drive/folders/13q-R1LtKgJ6YbgFQYetQewGDOrZpF2_a?usp=sharing",
   
   },
   {
