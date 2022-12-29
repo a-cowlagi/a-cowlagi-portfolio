@@ -12,7 +12,7 @@ export default function Experience() {
       title: "Undergraduate Researcher",
       location: "University of Pennsylvania",
       desc:
-        "• Working on understanding deep network representations using techniques from statistical physics and information theory <br><br> • Characterizing the geometry of model manifolds to understand network overparameterization <br><br>  • Determining if data geometry induces capacity control in standard neural architectures to establish non-vacuous generalization bounds for sloppy models",
+        "• Exploring the geometry of deep network representations by leveraging techniques from statistical physics and information theory <br><br> • Developing model-agnostic approaches to select training examples that may accelerate and optimize training in the continual learning framework <br><br>  • Determine how training data structure induces capacity control in neural architectures; perform topology-preserving model reduction",
       img:
         "assets/inpca projection.png",
       img2:
@@ -40,12 +40,12 @@ export default function Experience() {
       title: "Teaching Assistant",
       location: "University of Pennsylvania",
       desc:
-        "•  Course: Data Structures & Algorithms; Course Size: 220+ <br> <br> • Roles/Responsibilities: Hold 1-hour weekly recitation section; Grade student assignments; Answer questions and provide debugging assistance through office hours; Develop course content (problem sets, recitation guides)",
+        "•  Courses: Data Structures & Algorithms, Machine Learning; Course Sizes: 220+ <br><br> • Roles/Responsibilities: Developed course content on sublinear time graph algorithms (estimating connected components); Hold 1-hour weekly recitations; Grade student assignments; Answer questions and provide debugging assistance through office hours",
       img:
         "assets/prims.png",
       img2:
         "assets/hash.png",
-      skills: ["Java", "Eclipse", "JUnit", "LaTeX", "Git"]
+      skills: ["Lambda", "Java", "Eclipse", "JUnit", "LaTeX", "Git"]
     },
     {
       id: "4",

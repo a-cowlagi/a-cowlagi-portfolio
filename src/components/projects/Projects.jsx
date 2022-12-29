@@ -67,27 +67,27 @@ export default function Projects() {
                 break;
             case "filter 1":
                 {
-                    indexArr = [0, 2, 3, 5, 7];
+                    indexArr = [0, 2, 3, 6, 7];
                     break;
                 }
             case "filter 2":
                 {
-                    indexArr = [0, 2, 4, 8, 3];
+                    indexArr = [0, 2, 3, 4, 5];
                     break;
                 }
             case "filter 3":
                 {
-                    indexArr = [1, 2, 3];
+                    indexArr = [1, 3, 4];
                     break;
                 }
             case "filter 4":
                 {
-                    indexArr = [1, 5];
+                    indexArr = [1, 6];
                     break;
                 }
             case "filter 5":
                 {
-                    indexArr = [4, 6];
+                    indexArr = [5, 8];
                     break;
                 }
             default:
