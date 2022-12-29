@@ -13,7 +13,7 @@ export const allProjects = [
     title: "Penn Electric Racing",
     text: "Hardware and Software sub-teams: <br><br>  Hardware: Designing, testing, and debugging a PCB to monitor and balance vehicle accumulator substacks (9 70V stacks) <br><br> Software: Developing firmware to perform high-speed (15+ kHz) PID-based field-oriented control (FOC) through space-vector modulation (SVM) on custom-built 3-phase motor controllers.",
     img:
-      process.env.PUBLIC_URL + "assets/rev4.png",
+      "./assets/rev4.png",
     link: "https://www.pennelectricracing.com/",
     
   },
