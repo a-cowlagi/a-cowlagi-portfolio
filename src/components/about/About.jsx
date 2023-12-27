@@ -23,7 +23,7 @@ export default function About() {
                             <br />
                             <p>I have interests in a range of topics including quantitative finance, deep learning, control & optimization, data visualization, statistical physics, embedded systems, and information theory.</p>
                             <br />
-                            <p>In my free time, I'm usually going down <a href="https://www.youtube.com/watch?v=-yrZpTHBEss">YouTube rabbitholes</a>, <a href="https://www.youtube.com/watch?v=y4KK8qvrqrE">watching sports</a>, or reading <a href="https://towardsdatascience.com/a-comprehensive-overview-of-gaussian-splatting-e7d570081362"> </a> cool stuff other people are thinking about!</p>
+                            <p>In my free time, I'm usually going down <a href="https://www.youtube.com/watch?v=-yrZpTHBEss">YouTube rabbitholes</a>, <a href="https://www.youtube.com/watch?v=y4KK8qvrqrE">watching sports</a>, or reading <a href="https://towardsdatascience.com/a-comprehensive-overview-of-gaussian-splatting-e7d570081362">cool stuff</a> other people are thinking about!</p>
                             <br />
 
                         </div>
