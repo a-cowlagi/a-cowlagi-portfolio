@@ -1,3 +1,4 @@
+
 export const allProjects = [
   {
     id: 1,
@@ -42,6 +43,38 @@ export const allProjects = [
   },
   {
     id: 6,
+    title: "To Contrast or Not to Contrast?",
+    text: "A goal of visual representation learning is to produce representations of natural images that reflect our own belief priors about the structure of images as well as the labels given to them. <br> <br> This work explores various properties of representations learned by self-supervised and supervised contrastive learning methods and verify their contribution to transferability and robustness.",
+    img:
+       "assets/contrastive_learning.png",
+    link: "/To-Contrast-Or-Not-To-Contrast.pdf",
+  
+  },
+  
+  {
+    id: 7,
+    title: "DigiNotes",
+    text: "Whether it’s the professors’ lecture notes on the chalkboard, or your friend’s handwritten notes on paper, the common method for copying down other people’s notes is taking a quick picture on your phone. <br> <br> This project explores the idea of converting handwritten words, equations, and diagrams into an easily digestible, digital format for later use.",
+    img:
+       "assets/diginotes.png",
+    link: "https://github.com/a-cowlagi/DigiNotes"
+  },
+  {
+    id: 8,
+    title: "Stereo SLAM",
+    text: "This work implements a Stereo Visual SLAM system by performing feature-based visual odometry. Then, a keyframe-based factor graph optimization routine is employed to periodically refine landmark and camera pose estimates. <br> <br>Notably, we leverage symbolic programming and sparse map maintenance to efficiently create a 3D map of the environment while simultaneously estimating the camera's position and orientation in real-time.",
+    img:
+       "assets/stereo_slam.png",
+    link: "https://github.com/Siming-He/Stereo_SLAM_6500"
+  },
+  {id: 9,
+  title: "Subtle Subterfuge",
+  text: "Natural language is an interesting domain for machine learning because language often contains redundancies –-  there are many ways to say the same thing. Consequently, we might desire that effective models are robust to such redundancies. <br> <br> In this work, we demonstrate modern models do not demonstrate such robustness by exploring and extending methods to generate state-of-the-art adversarial examples for sentiment classification.",
+  img: "assets/subtle_subterfuge.png",
+  link: "/SubtleSubterfuge.pdf"
+  },
+  {
+    id: 10,
     title: "AI@Penn, WUDAC",
     text: "Organized <a href = 'https://aipenn.org/aihacks' target = '_blank'> datathon </a> at the University of Pennsylvania sponsored by fintech/e-commerce companies attracting 100+ teams <br><br> Designed and taught workshop on sentiment analysis to 30+ Penn undergraduate students <br><br>Worked with a Philadelphia-based startup (Highlight) to develop a robust system for product review evaluation with 90+% OOS accuracy",
     img:
@@ -49,7 +82,7 @@ export const allProjects = [
     link: "https://gitfront.io/r/user-7866516/e40d90e09f12584ba430ee018c714ebc691b7486/AI-Penn-and-WUDAC/"
   },
   {
-    id: 7,
+    id: 11,
     title: "IOT-Based Solar Monitoring",
     text: "Constructed a novel IOT-based monitoring and feedback system for use with off-grid photovoltaic systems. <br><br> A long-range, Arduino-based device able to dynamically adjust power production to accomodate for real-time conditions and adapt to user energy consumption patterns. <br><br> Category winner (Energy) at Michigan Science and Engineering Fair",
     img:
@@ -58,25 +91,16 @@ export const allProjects = [
   
   },
   {
-    id: 8,
+    id: 12,
     title: "Billiard Balls and Decimal Expansions",
     text: "Projects completed at the University of Michigan, in an inquiry-based course exploring some open problems in mathematics. <br><br>• Billiard balls is an exploration of the mathematics of the trajectory of a billiard ball undergoing collisions with walls. <br><br>• Decimal expansions investigates the periods of decimal expansions of rational numbers.",
     img:
        "assets/mathresearch.png",
     link: "https://drive.google.com/drive/folders/1xT9Ds7hNejW5dVYZksuPWH8sdXXNB-kJ?usp=sharing"
   },
-  {
-    id: 9,
-    title: "Problem Solving in Physics",
-    text: "Created and taught an introductory course in physics and problem solving to 20+ local middle and high school students <br><br> Developed 18 interactive lecture sessions and 10 hands-on problem sets with extensive feedback",
-    img:
-       "assets/ipsp.png",
-    link: "https://drive.google.com/file/d/1zTOqgrT5WAkS9fnQmBErSlS7Kah1744N/view?usp=sharing"
-  }
-
-
-
 ];
+
+
 
 
 

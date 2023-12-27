@@ -6,7 +6,18 @@ export default function Experience() {
 
   const data = [
     {
-      id: "1",
+      icon: "./assets/mobile.png",
+      year: "June 2023 - August 2023",
+      title: "Quantitative Research Intern",
+      location: "Citadel GQS",
+      desc:"• Worked to evaluate and improve return forecasting models deriving from broker-side analyst estimate data. <br> <br> • Identified and resolved systematicanalyst coverage gaps across equities investment universe <br> <br> • Returning as a full-time quantitative research analyst in July 2024.",
+      img:
+        "assets/citadel_logo.png",
+      img2:
+        "assets/citadel_GQS_map.png",
+      skills: ["Pandas", "RFlow", "Sklearn", "MultiProcess", "Bash"],
+    },
+    {
       icon: "./assets/mobile.png",
       year: "April 2021 - Present",
       title: "Undergraduate Researcher",
@@ -20,7 +31,6 @@ export default function Experience() {
       skills: ["PyTorch", "Numpy", "Sklearn", "Seaborn", "TensorFlow"],
     },
     {
-      id: "2",
       icon: "./assets/globe.png",
       year: "April 2019 - November 2020",
       title: "Data Analyst",
@@ -34,13 +44,12 @@ export default function Experience() {
       skills: ["Pandas", "OpenCV", "MySQL", "SciPy", "AstroPy"]
     },
     {
-      id: "3",
       icon: "./assets/globe.png",
       year: "January 2022 - Present",
       title: "Teaching Assistant",
       location: "University of Pennsylvania",
       desc:
-        "•  Courses: Data Structures & Algorithms, Machine Learning; Course Sizes: 220+ <br><br> • Roles/Responsibilities: Developed course content on sublinear time graph algorithms (estimating connected components); Hold 1-hour weekly recitations; Grade student assignments; Answer questions and provide debugging assistance through office hours",
+        "•  Courses: Data Structures & Algorithms, Machine Learning; Course Size: 220+ <br><br> • Roles/Responsibilities: Developed course content on sublinear time graph algorithms; Revamped course infrastructure through deployment of automated grading suite; Hold 1-hour weekly recitations; Grade student assignments; Answer questions and provide debugging assistance through office hours",
       img:
         "assets/prims.png",
       img2:
@@ -48,7 +57,6 @@ export default function Experience() {
       skills: ["Lambda", "Java", "Eclipse", "JUnit", "LaTeX", "Git"]
     },
     {
-      id: "4",
       icon: "./assets/globe.png",
       year: "June 2019 - May 2020",
       title: "Research Assistant",

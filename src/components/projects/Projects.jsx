@@ -40,7 +40,7 @@ export default function Projects() {
         },
         {
             id: "filter 2",
-            title: "ML/Data Science",
+            title: "Machine Learning & Data Science",
         },
         {
             id: "filter 3",
@@ -49,10 +49,6 @@ export default function Projects() {
         {
             id: "filter 4",
             title: "Hardware",
-        },
-        {
-            id: "filter 5",
-            title: "Teaching",
         },
 
     ];
@@ -67,27 +63,22 @@ export default function Projects() {
                 break;
             case "filter 1":
                 {
-                    indexArr = [0, 2, 3, 6, 7];
+                    indexArr = [0, 2, 3, 4, 5, 7, 8, 10, 11];
                     break;
                 }
             case "filter 2":
                 {
-                    indexArr = [0, 2, 3, 4, 5];
+                    indexArr = [0, 2, 3, 5, 6, 8, 9];
                     break;
                 }
             case "filter 3":
                 {
-                    indexArr = [1, 3, 4];
+                    indexArr = [2, 3, 5, 6];
                     break;
                 }
             case "filter 4":
                 {
-                    indexArr = [1, 6];
-                    break;
-                }
-            case "filter 5":
-                {
-                    indexArr = [5, 8];
+                    indexArr = [1, 7, 10];
                     break;
                 }
             default:

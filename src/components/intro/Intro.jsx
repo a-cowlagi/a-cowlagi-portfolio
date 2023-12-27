@@ -12,8 +12,7 @@ export default function Intro() {
             backDelay: 1500,
             backSpeed: 60,
             typeSpeed: 100,
-            strings: ['student.', 'programmer.', 'researcher.', 'electrical engineer.',
-                'researcher.']
+            strings: ['student.', 'programmer.', 'quantitative researcher.', 'electrical engineer.']
         })
     }, [])
     return (

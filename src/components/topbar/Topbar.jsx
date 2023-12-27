@@ -24,12 +24,12 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     </div>
 
                     <div className="itemContainer">
-                        <a href="mailto:acowlagi@sas.upenn.edu">
+                        <a href="mailto:acowlagi@seas.upenn.edu">
                             <MailIcon className="icon" />
                         </a>
 
                         <span>
-                            <a href="mailto:acowlagi@sas.upenn.edu">  acowlagi@sas.upenn.edu
+                            <a href="mailto:acowlagi@seas.upenn.edu">  acowlagi@seas.upenn.edu
                             </a>
                         </span>
                     </div>

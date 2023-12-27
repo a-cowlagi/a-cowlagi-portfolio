@@ -5,13 +5,13 @@ import Swal from "sweetalert2";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 
 export default function Contact() {
-  const SERVICE_ID = "service_anlp0nc";
+  const SERVICE_ID = "service_mqzaju9";
   const TEMPLATE_ID = "template_9h8oxmj";
-  const USER_ID = "user_LjzI6LZtE7sjAWa15k4LV";
+  const PUBLIC_KEY = "user_LjzI6LZtE7sjAWa15k4LV";
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
         Swal.fire({

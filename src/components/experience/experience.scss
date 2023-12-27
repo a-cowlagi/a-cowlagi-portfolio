@@ -229,7 +229,7 @@
                             flex-direction: row;
                             flex-wrap: wrap;
                             justify-content: left;
-                            align-items: left;
+                            align-items: center;
 
                             ul {
                                 display: flex;
@@ -239,8 +239,8 @@
 
                                 li {
                                     width: 80px;
-                                    height: 30px;
-                                    font-size: 14px;
+                                    height: 55px;
+                                    font-size: 12px;
 
                                     @media (max-height: 680px) {
                                         height: 23px;

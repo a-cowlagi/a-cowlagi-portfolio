@@ -40,10 +40,8 @@ export default function Education() {
                 "Concentration: Computer Techniques, Minor(s): Math",
             img: "assets/cern.jpg",
             link: "https://www.physics.upenn.edu/"
-
         },
     ];
-
 
     return (
         <div className="education" id="education">
